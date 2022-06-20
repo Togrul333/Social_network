@@ -1,0 +1,11 @@
+@include('layouts.header')
+@if(\Illuminate\Support\Facades\Auth::check())
+    @include('layouts.friends')
+    @include('layouts.myportfolio')
+    {{--@include('layouts.channel')--}}
+    @include('layouts.channel2')
+@else
+    @include('layouts.contactus')
+@endif
+{{--@include('layouts.map')--}}
+@include('layouts.footer')
